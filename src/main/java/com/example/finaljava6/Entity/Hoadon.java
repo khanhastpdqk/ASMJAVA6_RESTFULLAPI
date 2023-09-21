@@ -8,8 +8,9 @@ import lombok.Setter;
 
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
-@Entity @Table(name = "HoaDon")
-public class Hoadon {
+@Entity
+@Table(name = "HoaDon")
+public class HoaDon {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long mahoadon;

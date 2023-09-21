@@ -14,11 +14,14 @@ import java.util.UUID;
 @AllArgsConstructor
 @Entity
 @Table(name = "PhieuGiaoHang")
-public class Phieugiaohang {
+public class PhieuGiaoHang {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     UUID maphieugiao;
     String nguoinhan;
     String sdtnhan;
+    Integer phigiaohang;
+    @ManyToOne @JoinColumn(name = "HoaDonGiao")
+    HoaDon HoaDonGiao;
 
 }
